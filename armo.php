@@ -1,5 +1,7 @@
 <?php
 
+namespace armo;
+
 class armo {
 
   private $data;

@@ -1,0 +1,9 @@
+{
+  "name": "mathCodingClub/armo",  
+  "autoload": {
+    "psr-4": {
+      "armo\\": ""
+    }
+  },
+  "minimum-stability": "dev"
+}
