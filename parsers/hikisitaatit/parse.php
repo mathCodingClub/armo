@@ -38,7 +38,7 @@ $data = array_merge(
     json_decode(file_get_contents("../../quotes/chuck1.json"),true),
     json_decode(file_get_contents("../../quotes/chuck2.json"),true)
     );
-file_put_contents("../../quotes/chuck.json", json_encode($chuck, JSON_PRETTY_PRINT));
+file_put_contents("../../quotes/chuck.json", json_encode($data, JSON_PRETTY_PRINT));
 unlink("../../quotes/chuck1.json");
 unlink("../../quotes/chuck2.json");
 
