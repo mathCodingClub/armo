@@ -9,7 +9,7 @@ class armo {
   public function __construct($user) {
     $fileName = __DIR__ . '/quotes/' . $user . '.json';
     if (!file_exists($fileName)) {
-      throw new Exception("Citations for '$user' do not exist.", 310);
+      throw new \Exception("Citations for '$user' do not exist.", 310);
     }
     $this->data = json_decode(file_get_contents($fileName), true);
   }
