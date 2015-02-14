@@ -15,7 +15,7 @@ class armo {
     if (!file_exists($fileName)) {
       // try from database
       $db = self::getDB();
-      $data = $db->getById(self::users, $username, 'username', 'id');
+      $data = $db->getById(self::users, $user, 'username', 'id');
       if (!isset($data['id'])) {
         throw new \Exception("Citations for '$user' do not exist.", 310);
       }
