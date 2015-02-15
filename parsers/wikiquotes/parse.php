@@ -17,7 +17,9 @@ foreach ($people as $file => $guide) {
   $url = $guide[0];
 
   $data = file_get_contents($url);
+  // print mb_detect_encoding($data, 'auto');  
   if ($file == 'john') {
+    continue; // doesn't work    
     $data = iconv('iso-8859-1', 'utf-8', $data);
   }
 // file_put_contents('data.txt', $data);
