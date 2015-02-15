@@ -88,7 +88,7 @@ class armo {
       return $this->data[$ind];
     }
     else {
-      return '"' . $this->data[$ind]['message'] . '" ' . date('D d.m.Y H:i:s',$this->data[$ind]['timestamp']);
+      return '"' . $this->data[$ind]['message'] . '" ' . date('D d.m.Y H:i:s',$this->data[$ind]['timestamp']) . ' UTC';
     }
   }
 
